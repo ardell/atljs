@@ -1,3 +1,12 @@
 <h2>{{title}}</h2>
 <p>{{text}}</p>
 
+<hr />
+
+{{#each comments}}
+  <p>
+    <strong>{{commenter}}</strong>:
+    {{body}}
+  </p>
+{{/each}}
+
