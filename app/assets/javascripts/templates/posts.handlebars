@@ -2,9 +2,15 @@
 
 <ul>
   {{#each post in controller}}
-    <li>{{post.title}}</li>
+    <li>
+      {{#linkTo 'post' post}}
+        {{post.title}}
+      {{/linkTo}}
+    </li>
   {{else}}
     <li class="empty">There are no posts.</li>
   {{/each}}
 </ul>
+
+{{outlet}}
 

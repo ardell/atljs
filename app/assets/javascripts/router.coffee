@@ -2,5 +2,6 @@
 
 Atljs.Router.map ()->
 
-  @resource 'posts'
+  @resource 'posts', ->
+    @resource 'post', { path: ':post_id' }
 
