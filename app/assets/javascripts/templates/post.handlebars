@@ -1,7 +1,12 @@
 {{#if isEditing}}
+
+  {{!-- edit --}}
   {{partial 'posts/form'}}
   <button {{action 'save'}}>Save</button>
+
 {{else}}
+
+  {{!-- show --}}
   <h2>{{title}}</h2>
   <p>{{text}}</p>
   <button {{action 'edit'}}>Edit</button>

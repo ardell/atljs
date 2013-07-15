@@ -2,4 +2,3 @@
 
   model: (params) ->
     Atljs.Post.find(params.post_id)
-

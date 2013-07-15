@@ -17,7 +17,7 @@
       body:      @get('yourComment')
     comment.save()
 
-    # Clearn out yourName and yourComment fields
+    # Clean out yourName and yourComment fields
     @set 'yourName',    ''
     @set 'yourComment', ''
 
