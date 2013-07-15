@@ -1,12 +1,27 @@
-<h2>{{title}}</h2>
-<p>{{text}}</p>
+{{#if isEditing}}
+  <div>
+    <label>Title:</label>
+    {{input valueBinding="title"}}
+  </div>
 
-<hr />
+  <div>
+    <label>Text:</label>
+    {{textarea valueBinding="text"}}
+  </div>
 
-{{#each comments}}
-  <p>
-    <strong>{{commenter}}</strong>:
-    {{body}}
-  </p>
-{{/each}}
+  <button {{action 'save'}}>Save</button>
+{{else}}
+  <h2>{{title}}</h2>
+  <p>{{text}}</p>
+  <button {{action 'edit'}}>Edit</button>
+
+  <hr />
+
+  {{#each comments}}
+    <p>
+      <strong>{{commenter}}</strong>:
+      {{body}}
+    </p>
+  {{/each}}
+{{/if}}
 
