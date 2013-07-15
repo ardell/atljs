@@ -3,6 +3,12 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'active_model_serializers', :git => 'git://github.com/rails-api/active_model_serializers.git'
 
+# Ember stuff
+gem 'ember-rails',       :git => 'git://github.com/emberjs/ember-rails.git'
+gem 'ember-source',      '1.0.0.rc6'
+gem 'handlebars-source', '1.0.0.rc4'
+gem 'barber',            git: 'git://github.com/tchak/barber.git'  # using the default version gives this error: https://github.com/emberjs/ember.js/issues/1827
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
