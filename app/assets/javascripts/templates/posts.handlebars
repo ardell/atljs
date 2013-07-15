@@ -1,0 +1,10 @@
+<h2>All Posts</h2>
+
+<ul>
+  {{#each post in controller}}
+    <li>{{post.title}}</li>
+  {{else}}
+    <li class="empty">There are no posts.</li>
+  {{/each}}
+</ul>
+
