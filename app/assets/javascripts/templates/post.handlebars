@@ -23,5 +23,17 @@
       {{body}}
     </p>
   {{/each}}
+
+  <div>
+    <label>Your Name:</label>
+    {{input valueBinding="yourName"}}
+  </div>
+
+  <div>
+    <label>Comment:</label>
+    {{textarea valueBinding="yourComment"}}
+  </div>
+
+  <button {{action 'addComment'}}>Add Comment</button>
 {{/if}}
 
